@@ -15,10 +15,10 @@ export const initSession = async (req, res) => {
   const { game_id, player_id, balance, demo } = body;
   console.log(body);
 
-  const session = uuidv4();
-  SESSIONS.push({
-    session,
-  });
+  // const session = uuidv4();
+  // SESSIONS.push({
+  //   session,
+  // });
 
   const doc = new SessionModel({
     game_id,
@@ -45,7 +45,7 @@ export const getParam = async (req, res) => {
   const currentSession = await SessionModel.findById(session);
 
   if (!currentSession) {
-    returnres.status(400).json({ error: 'session does not exist' });
+    return res.status(400).json({ error: 'session does not exist' });
   }
 
   console.log('currentSession', currentSession);
