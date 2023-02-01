@@ -12,7 +12,7 @@ import { ENDPOINTS } from './consts/endpoints.js';
 
 // const __dirname = path.resolve();
 export const PORT = process.env.PORT;
-export const DOMAIN = 'https://localhost:' + PORT;
+export const DOMAIN = process.env.PORT.DOMAIN + ':' + PORT;
 export const PATH_TO_GAME = 'http://localhost:8080';
 const app = express();
 
