@@ -64,7 +64,7 @@ export const getParam = async (req, res) => {
     balance_url: DOMAIN + ENDPOINTS.balance_url,
     bet_url: DOMAIN + ENDPOINTS.bet_url,
     buy_bets_url: DOMAIN + ENDPOINTS.buy_bets_url,
-    draw_info_url: DOMAIN + ENDPOINTS.draw_url,
+    draw_info_url: DOMAIN + ENDPOINTS.draw_info_url,
     get_my_bets_url: DOMAIN + ENDPOINTS.get_my_bets_url,
     refill_url: DOMAIN + ENDPOINTS.refill_url,
     register_url: DOMAIN + ENDPOINTS.register_url,
