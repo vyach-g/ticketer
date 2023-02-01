@@ -3,3 +3,4 @@ key.pem
 csr.pem
 cert.pem
 .env
+node_modules
